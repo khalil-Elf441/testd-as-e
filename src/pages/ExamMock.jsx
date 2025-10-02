@@ -5,14 +5,15 @@ import { examsData } from "../data/exams";
 export default function ExamMock() {
   const { tech, exam, mock } = useParams();
   const navigate = useNavigate();
+
   const technology = examsData[tech];
-  if (!technology) return <p>Technology not found</p>;
+  if (!technology) return <p className="p-6">Technology not found</p>;
 
-  const examData = technology.exams.find((e) => e.code === exam);
-  if (!examData) return <p>Exam not found</p>;
+  const examData = technology.exams?.find((e) => e.code === exam);
+  if (!examData) return <p className="p-6">Exam not found</p>;
 
-  const mockData = examData.mocks.find((m) => m.id === parseInt(mock));
-  if (!mockData) return <p>Mock not found</p>;
+  const mockData = examData.mocks?.find((m) => m.id === parseInt(mock));
+  if (!mockData) return <p className="p-6">Mock not found</p>;
 
   const [timeLeft, setTimeLeft] = useState(mockData.duration * 60);
   const [answers, setAnswers] = useState({});
