@@ -16,16 +16,12 @@ const techs = [
     logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" 
   },
   { 
-    name: "Kubernetes", 
-    logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" 
-  },
-  { 
     name: "Red Hat", 
     logo: "https://cdn.worldvectorlogo.com/logos/red-hat-1.svg" 
   },
   { 
     name: "Linux Foundation", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Linux_Foundation_logo.svg/512px-Linux_Foundation_logo.svg.png" 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Linux_Foundation_logo_2013.svg/375px-Linux_Foundation_logo_2013.svg.png" 
   },
   { 
     name: "IBM", 
