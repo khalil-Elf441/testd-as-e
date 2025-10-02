@@ -3,13 +3,34 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const techs = [
-  { name: "AWS", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" },
-  { name: "GCP", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" },
-  { name: "Azure", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" },
-  { name: "Kubernetes", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" },
-  { name: "Red Hat", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Red_Hat_logo.svg" },
-  { name: "Linux Foundation", logo: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Linux-Foundation-logo.png" },
-  { name: "IBM", logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" },
+  { 
+    name: "AWS", 
+    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/amazonaws.svg" 
+  },
+  { 
+    name: "GCP", 
+    logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" 
+  },
+  { 
+    name: "Azure", 
+    logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" 
+  },
+  { 
+    name: "Kubernetes", 
+    logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" 
+  },
+  { 
+    name: "Red Hat", 
+    logo: "https://cdn.worldvectorlogo.com/logos/red-hat-1.svg" 
+  },
+  { 
+    name: "Linux Foundation", 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Linux_Foundation_logo.svg/512px-Linux_Foundation_logo.svg.png" 
+  },
+  { 
+    name: "IBM", 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" 
+  },
 ];
 
 export default function Home() {
