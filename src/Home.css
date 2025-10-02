@@ -1,0 +1,68 @@
+/* src/Home.css */
+
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #87CEEB, #E0FFFF); /* Ciel nuageux */
+  color: #333;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8); /* Nuage transparent */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Pour complémenter Framer */
+}
+
+.cloud-drift {
+  /* Animation de flottaison légère (combinée avec Framer) */
+  animation: drift 3s infinite alternate ease-in-out;
+}
+
+@keyframes drift {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+.tech-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.cta-button {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 30px;
+  background: #00BFFF; /* Bleu ciel */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #1E90FF;
+}
+
+.warp-portal {
+  /* Effet warp fun pour CTA */
+  box-shadow: 0 0 10px #00BFFF;
+}
