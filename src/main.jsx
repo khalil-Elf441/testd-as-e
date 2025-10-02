@@ -1,11 +1,15 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
-// Mettre basename pour GitHub Pages
-createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/testd-as-e/">
-    <App />
-  </BrowserRouter>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Tu ajouteras ici les routes pour Exams, ExamMocks, etc */}
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 );
