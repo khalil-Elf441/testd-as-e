@@ -7,16 +7,19 @@ export default function ExamList() {
   const navigate = useNavigate();
 
   const technology = examsData[tech];
-  if (!technology) return <p>Technology not found</p>;
+  if (!technology) return <p className="p-6">Technology not found</p>;
 
-  const examData = technology.exams.find((e) => e.code === exam);
-  if (!examData) return <p>Exam not found</p>;
+  const examData = technology.exams?.find((e) => e.code === exam);
+  if (!examData) return <p className="p-6">Exam not found</p>;
+
+  const mocks = examData.mocks || [];
+  if (mocks.length === 0) return <p className="p-6">No mocks available</p>;
 
   return (
     <div className="min-h-screen p-6 bg-gray-100">
       <h1 className="text-2xl font-bold mb-4">{examData.name} - Mocks</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {examData.mocks.map((mock) => (
+        {mocks.map((mock) => (
           <div
             key={mock.id}
             className="bg-white shadow rounded p-4 cursor-pointer hover:bg-green-50"
