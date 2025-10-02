@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { motion, Variants } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-
+import './Home.css';
 // Données des technologies (inchangées, mais typées pour créativité future)
 const techs = [
   { name: "AWS", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/amazonaws.svg" },
