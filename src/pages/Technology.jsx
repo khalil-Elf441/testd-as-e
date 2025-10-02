@@ -4,6 +4,7 @@ import { examsData } from "../data/exams";
 
 export default function Technology() {
   const { tech } = useParams();
+  console.log("Tech param:", tech);
   const navigate = useNavigate();
   const technology = examsData[tech];
 
